@@ -38,8 +38,8 @@ const usersRouter = require('./routes/users');
 
 app.use('//', indexRouter);
 app.use('/', getMedia);
-app.use('/api/users', usersRouter);
-app.use('/api/manage-recording', managerecording);
+app.use('/', usersRouter);
+app.use('/', managerecording);
 
 
 app.use((req, res, next) => {

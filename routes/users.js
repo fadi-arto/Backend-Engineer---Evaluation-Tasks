@@ -5,7 +5,7 @@ const { registerAdmin, loginAdmin} = require('../controllers/userControllers')
 
 
 
-router.post('/auth/login', loginAdmin);
-router.post('/admin/register-admin',   registerAdmin);
+router.post('/api/users/auth/login', loginAdmin);
+router.post('/api/users/admin/register-admin',   registerAdmin);
 
 module.exports = router;
